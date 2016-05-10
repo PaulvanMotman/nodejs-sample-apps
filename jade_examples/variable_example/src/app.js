@@ -12,7 +12,10 @@ app.get('/', function (req, res) {
 			console.log(error);
 		}
 
-		res.render('index', {stuff: data});
+		res.render('index', {
+			stuff: data,
+			hello: 'Mentor'
+		});
 	});
 });
 
